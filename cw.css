@@ -1,0 +1,25 @@
+.container   /*container for body*/
+{
+margin:3% 15%;
+display:grid;
+grid-template-areas:      /*grid-template area display*/
+    "header header . ."   /*header takes up first half*/
+    "nothing section section section" /*section starts at row 2 and covers rest of screen*/
+    "nope nope footer footer";    /*footer covers later half*/
+    border:1px solid black;
+grid-template-columns: repeat(4,auto);   /*width auto fills scren*/
+}
+
+/*borders to show you the width*/
+header{
+    grid-area: header;
+    border:1px solid black;
+}
+section{
+    grid-area: section;
+    border:1px solid black;
+}
+footer{
+    grid-area:footer;
+    border:1px solid black;
+}
